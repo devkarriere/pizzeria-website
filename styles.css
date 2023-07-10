@@ -184,6 +184,37 @@ body {
   color: var(--text-color);
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2rem;
+}
+
+.contact .heading {
+  margin-top: 0;
+}
+
+.contact-detail {
+  margin-top: 0.5rem;
+  color: var(--text-color);
+}
+
+.contact-actions {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-image {
+  width: 100%;
+}
+
 @media only screen and (min-width: 600px) {
   .nav {
     gap: 2rem;
@@ -206,6 +237,16 @@ body {
 
   .about-text {
     font-size: 1rem;
+  }
+
+  .contact-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contact-image {
+    width: 60%;
   }
 }
 
@@ -247,6 +288,23 @@ body {
     width: 20rem;
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
+  }
+
+  .contact .heading {
+    margin-bottom: 2rem;
+  }
+
+  .contact-detail {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .contact-actions {
+    flex-direction: row;
+  }
+
+  .contact-image {
+    width: 50%;
   }
 }
 
