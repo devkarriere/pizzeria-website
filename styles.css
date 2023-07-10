@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
   background-color: #1a1a1a;
@@ -26,7 +30,8 @@ body {
   text-align: center;
 }
 
-.nav-item {
+.nav-item,
+.footer-item {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
@@ -35,7 +40,8 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
-.nav-item:hover {
+.nav-item:hover,
+.footer-item:hover {
   color: var(--primary-color);
 }
 
@@ -191,7 +197,7 @@ body {
 
 .contact-content {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   gap: 2rem;
 }
 
@@ -215,10 +221,47 @@ body {
   width: 100%;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 2rem 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+  background-color: #303030;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-copyright {
+  margin-top: 1rem;
+  color: var(--text-color);
+}
+
 @media only screen and (min-width: 600px) {
-  .nav {
+  .nav,
+  .footer-links {
     gap: 2rem;
     font-size: 1rem;
+  }
+
+  .footer {
+    margin-top: 4rem;
+    padding: 3rem 0;
+    gap: 3rem;
+  }
+
+  .footer-links {
+    flex-direction: row;
   }
 
   .title {
@@ -251,8 +294,13 @@ body {
 }
 
 @media only screen and (min-width: 1000px) {
-  .nav {
+  .nav,
+  .footer-links {
     gap: 4rem;
+  }
+
+  .footer {
+    margin-top: 6rem;
   }
 
   .title {

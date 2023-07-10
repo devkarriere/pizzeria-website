@@ -8,9 +8,9 @@
   </head>
   <body>
     <div class="nav">
-      <a href="#" class="nav-item">Über Uns</a>
+      <a href="#about" class="nav-item">Über Uns</a>
       <a href="#" class="nav-item">Speise<wbr />karte</a>
-      <a href="#" class="nav-item">Öffnungs<wbr />zeiten</a>
+      <a href="#info" class="nav-item">Öffnungs<wbr />zeiten</a>
     </div>
     <div class="hero">
       <h1 class="title">
@@ -20,7 +20,7 @@
       <p class="subtitle">Original italienische Küche aus der Toskana</p>
       <a href="#info" class="hero-action button">Öffnungszeiten ansehen</a>
     </div>
-    <div class="about container">
+    <div id="about" class="about container">
       <div class="about-content">
         <h2 class="heading">Über Uns</h2>
         <p class="about-text">
@@ -57,8 +57,8 @@
         </div>
       </div>
     </div>
-    <div class="info-wrapper">
-      <div id="info" class="info container">
+    <div id="info" class="info-wrapper">
+      <div class="info container">
         <h2 class="heading">Öffnungszeiten</h2>
         <div class="hours">
           <p class="hours-entry">
@@ -87,6 +87,11 @@
     </div>
     <div class="contact container">
       <div class="contact-content">
+        <img
+          class="contact-image"
+          src="./images/contact.jpg"
+          alt="Herzlich Willkommen im Mamma Mia!"
+        />
         <div class="contact-details">
           <h2 class="heading">Kontakt</h2>
           <p class="contact-detail">(0) 123 4567890</p>
@@ -100,12 +105,15 @@
             >
           </div>
         </div>
-        <img
-          class="contact-image"
-          src="./images/contact.jpg"
-          alt="Herzlich Willkommen im Mamma Mia!"
-        />
       </div>
     </div>
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="#" class="footer-item">Impressum</a>
+        <a href="#" class="footer-item">Datenschutzerklärung</a>
+        <a href="#" class="footer-item">Jobs</a>
+      </div>
+      <p class="footer-copyright">&copy; 2023 DevKarriere.de</p>
+    </footer>
   </body>
 </html>
