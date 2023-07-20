@@ -143,7 +143,7 @@ body {
 }
 
 .about-image-large {
-  width: 50%;
+  min-width: 50%;
 }
 
 .about-images-small {
